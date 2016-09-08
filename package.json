@@ -1,0 +1,13 @@
+{
+	"name":         "isomorphic-location",
+	"description":  "Get your current location in Node & Browser.",
+	"version":      "0.1.0",
+	"main":         "index.js",
+	"files":        ["index.js"],
+	"keywords":     ["geolocation", "location", "gps", "isomorphic", "browser"],
+	"author":       "Jannis R <mail@jannisr.de>",
+	"homepage":     "https://github.com/derhuerst/isomorphic-location",
+	"repository":   "git://github.com/derhuerst/isomorphic-location.git",
+	"license":      "ISC",
+	"engines":      {"node": ">=6"}
+}
