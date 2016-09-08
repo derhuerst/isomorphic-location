@@ -9,5 +9,9 @@
 	"homepage":     "https://github.com/derhuerst/isomorphic-location",
 	"repository":   "git://github.com/derhuerst/isomorphic-location.git",
 	"license":      "ISC",
-	"engines":      {"node": ">=6"}
+	"engines":      {"node": ">=6"},
+	"dependencies": {
+		"browser-location": "derhuerst/browser-location",
+		"location": "derhuerst/location"
+	}
 }
