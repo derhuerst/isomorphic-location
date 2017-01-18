@@ -1,7 +1,5 @@
 'use strict'
 
-const isBrowser = require('is-browser')
-
-module.exports = isBrowser
-	? require('browser-location')
-	: require('location')
+if (process.browser)
+	module.exports = require('browser-location')
+else require('location')
