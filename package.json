@@ -1,7 +1,7 @@
 {
 	"name":         "isomorphic-location",
 	"description":  "Get your current location in Node & Browser.",
-	"version":      "0.1.0",
+	"version":      "0.1.1",
 	"main":         "index.js",
 	"browser":      "browser.js",
 	"files":        ["index.js", "browser.js"],
@@ -12,7 +12,7 @@
 	"license":      "ISC",
 	"engines":      {"node": ">=6"},
 	"dependencies": {
-		"browser-location": "derhuerst/browser-location",
-		"location": "derhuerst/location"
+		"@derhuerst/browser-location": "^0.1.0",
+		"@derhuerst/location": "^0.3.0"
 	}
 }
