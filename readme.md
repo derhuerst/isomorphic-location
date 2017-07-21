@@ -13,34 +13,39 @@
 ## Installing
 
 ```shell
-npm install derhuerst/isomorphic-location
+npm install isomorphic-location
 ```
 
 
 ## Usage
 
-```
-location([timeout]) // 10s by default
-```
-
 ```js
 const location = require('isomorphic-location')
 
-location()
-	.then((l) => console.log(l))
-	.catch((err) => console.error(err))
+location((err, loc) => {
+	if (err) console.error(err)
+	else console.log(loc)
+})
 ```
 
 This will give you something similar to the following:
 
 ```js
 {
-	  latitude:  52.547172
-	, longitude: 13.347745
-	, precision: 65  // in meters
-	, native:    true
+	latitude: 52.547172,
+	longitude: 13.347745,
+	precision: 65, // in meters
+	native: true
 }
 ```
+
+## API
+
+```js
+location([timeout], cb)
+```
+
+`timeout` is in milliseconds, optional and `10 * 1000` by default. `cb(err, loc)` follows the [Node callback convention](https://stackoverflow.com/a/40512067).
 
 
 ## Contributing
